@@ -35,6 +35,8 @@ int main(void)
 	cv::Mat grad ;
 	cv::addWeighted( abs_grad_x, 0.5, abs_grad_y, 0.5, 0, grad );
 
+	cv::imshow( "GradientX", abs_grad_x );
+	cv::imshow( "GradientY", abs_grad_y );
 	cv::imshow( "Sobel", grad );
 
 	cv::waitKey(0);
